@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sitecore.Zip</name>
+    </assembly>
+    <members>
+        <member name="T:Sitecore.Zip.Utils.CRC32">
+            <summary>
+            Calculates a 32bit Cyclic Redundancy Checksum (CRC) using the
+            same polynomial used by Zip. This type ie generally not used directly
+            by applications wishing to create, read, or manipulate zip archive files.
+            </summary>
+        </member>
+        <member name="P:Sitecore.Zip.Utils.CRC32.TotalBytesRead">
+            <summary>
+            indicates the total number of bytes read on the CRC stream.
+            This is used when writing the ZipDirEntry when compressing files.
+            </summary>
+        </member>
+        <member name="M:Sitecore.Zip.Utils.CRC32.GetCrc32(System.IO.Stream)">
+            <summary>
+            Returns the CRC32 for the specified stream.
+            </summary>
+            <param name="input">The stream over which to calculate the CRC32</param>
+            <returns>the CRC32 calculation</returns>
+        </member>
+        <member name="M:Sitecore.Zip.Utils.CRC32.GetCrc32AndCopy(System.IO.Stream,System.IO.Stream)">
+            <summary>
+            Returns the CRC32 for the specified stream, and writes the input into the output stream.
+            </summary>
+            <param name="input">The stream over which to calculate the CRC32</param>
+            <param name="output">The stream into which to deflate the input</param>
+            <returns>the CRC32 calculation</returns>
+        </member>
+        <member name="M:Sitecore.Zip.Utils.CRC32.#ctor">
+            <summary>
+            Construct an instance of the CRC32 class, pre-initialising the table
+            for speed of lookup.
+            </summary>
+        </member>
+        <member name="T:Sitecore.Zip.Utils.StreamUtils">
+            <summary>
+            StreamUtils class
+            </summary>
+        </member>
+        <member name="M:Sitecore.Zip.Utils.StreamUtils.CopyStream(System.IO.Stream,System.IO.Stream,System.Int32)">
+            <summary>
+            Copies one stream to another.
+            </summary>
+            <param name="from">From.</param>
+            <param name="to">To.</param>
+            <param name="bufferSize">Size of the buffer.</param>
+        </member>
+        <member name="M:Sitecore.Zip.Utils.StreamUtils.CopyBlock(System.IO.Stream,System.IO.Stream,System.Int32)">
+            <summary>
+            Copies the block.
+            </summary>
+            <param name="from">From.</param>
+            <param name="to">To.</param>
+            <param name="blockSize">Size of the block.</param>
+        </member>
+        <member name="T:Sitecore.Zip.ZipEntry">
+            <summary>
+            ZipEntry class
+            </summary>
+        </member>
+        <member name="M:Sitecore.Zip.ZipEntry.GetStream">
+            <summary>
+            Gets the stream.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Sitecore.Zip.ZipEntry.Name">
+            <summary>
+            Gets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Sitecore.Zip.ZipEntry.IsDirectory">
+            <summary>
+            Gets a value indicating whether this instance is directory.
+            </summary>
+            <value>
+            	<c>true</c> if this instance is directory; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Sitecore.Zip.ZipEntry.Size">
+            <summary>
+            Gets the size.
+            </summary>
+            <value>The size.</value>
+        </member>
+        <member name="M:Sitecore.Zip.ZipEntry.Read(System.IO.Stream,System.Text.Encoding)">
+            <summary>
+            Reads one ZipEntry from the given stream.
+            </summary>
+            <param name="s">the stream to read from.</param>
+            <param name="nameEncoding">The encoding to use to read entry name.</param>
+            <returns>the ZipEntry read from the stream.</returns>
+        </member>
+        <member name="M:Sitecore.Zip.ZipEntry.ReadSignature(System.IO.Stream)">
+            <summary>
+            Reads the signature.
+            </summary>
+            <param name="s">The s.</param>
+            <returns>The signature.</returns>
+        </member>
+        <member name="M:Sitecore.Zip.ZipEntry.FindSignature(System.IO.Stream,System.Int32)">
+            <summary>
+            Finds the signature.
+            </summary>
+            <param name="s">The s.</param>
+            <param name="SignatureToFind">The signature to find.</param>
+            <returns>The signature.</returns>
+        </member>
+        <member name="T:Sitecore.Zip.ZipReader">
+            <summary>
+            ZipReader class
+            </summary>
+        </member>
+        <member name="M:Sitecore.Zip.ZipReader.#ctor(System.IO.Stream)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.Zip.ZipReader"/> class.
+            </summary>
+            <param name="input">The input.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipReader.#ctor(System.IO.Stream,System.Text.Encoding)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.Zip.ZipReader"/> class. Uses given encoding to read names of archived files.
+            </summary>
+            <param name="input">The input stream.</param>
+            <param name="encoding">The encoding.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipReader.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.Zip.ZipReader"/> class.
+            </summary>
+            <param name="filename">The filename.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipReader.#ctor(System.String,System.Text.Encoding)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.Zip.ZipReader"/> class.
+            </summary>
+            <param name="filename">The file name.</param>
+            <param name="encoding">The encoding.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipReader.GetEntry(System.String)">
+            <summary>
+            Gets the entry.
+            </summary>
+            <param name="entryName">Name of the entry.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Sitecore.Zip.ZipReader.Entries">
+            <summary>
+            Gets the entries.
+            </summary>
+            <value>The entries.</value>
+        </member>
+        <member name="M:Sitecore.Zip.ZipReader.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="T:Sitecore.Zip.ZipWriter">
+            <summary>
+            Zip builder class
+            </summary>
+        </member>
+        <member name="M:Sitecore.Zip.ZipWriter.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.Zip.ZipWriter"/> class.
+            </summary>
+            <param name="outputFile">The output file.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipWriter.#ctor(System.String,System.Text.Encoding)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sitecore.Zip.ZipWriter"/> class. Uses given encoding for file names.
+            </summary>
+            <param name="outputFile">The output file.</param>
+            <param name="encoding">The encoding.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipWriter.AddEntry(System.String,System.String)">
+            <summary>
+            Adds the entry.
+            </summary>
+            <param name="entryName">Name of the entry.</param>
+            <param name="filePath">The file path.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipWriter.AddEntry(System.String,System.Xml.XmlDocument)">
+            <summary>
+            Adds the entry.
+            </summary>
+            <param name="entryName">Name of the entry.</param>
+            <param name="doc">The doc.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipWriter.AddEntry(System.String,System.Byte[])">
+            <summary>
+            Adds the entry.
+            </summary>
+            <param name="entryName">Name of the entry.</param>
+            <param name="bytes">The bytes.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipWriter.AddEntry(System.String,System.IO.Stream)">
+            <summary>
+            Adds the entry.
+            </summary>
+            <param name="entryName">Name of the entry.</param>
+            <param name="stream">The stream.</param>
+        </member>
+        <member name="M:Sitecore.Zip.ZipWriter.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+    </members>
+</doc>

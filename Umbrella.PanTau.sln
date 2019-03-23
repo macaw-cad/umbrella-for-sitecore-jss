@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{A652564D-FD22-43B6-8749-91A3886E4458}"
 	ProjectSection(SolutionItems) = preProject
 		build.cake = build.cake
+		NuGet.Config = NuGet.Config
 		build.ps1 = build.ps1
 		cake-config.json = cake-config.json
 	EndProjectSection

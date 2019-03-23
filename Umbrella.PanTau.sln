@@ -5,21 +5,6 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbrella.PanTau", "Foundation.Umbrella.PanTau\code\Umbrella.PanTau.csproj", "{AA3991AA-AAA3-4C83-8AAA-07F85C6D1D55}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{A652564D-FD22-43B6-8749-91A3886E4458}"
-	ProjectSection(SolutionItems) = preProject
-		build.cake = build.cake
-		NuGet.Config = NuGet.Config
-		build.ps1 = build.ps1
-		cake-config.json = cake-config.json
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CakeScripts", "CakeScripts", "{47B07876-D946-4256-AB79-B32311B1293E}"
-	ProjectSection(SolutionItems) = preProject
-		CakeScripts\helper-methods.cake = CakeScripts\helper-methods.cake
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{4CBC925F-BE5B-4025-B49D-E1E3902D61E7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,12 +19,8 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{47B07876-D946-4256-AB79-B32311B1293E} = {A652564D-FD22-43B6-8749-91A3886E4458}
-		{4CBC925F-BE5B-4025-B49D-E1E3902D61E7} = {A652564D-FD22-43B6-8749-91A3886E4458}
-	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {41C84B48-D554-4BEA-A643-D77BA5957E30}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+		SolutionGuid = {41C84B48-D554-4BEA-A643-D77BA5957E30}
 	EndGlobalSection
 EndGlobal

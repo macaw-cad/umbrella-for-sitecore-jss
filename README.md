@@ -20,8 +20,12 @@ Umbrella for Sitecore JSS is a utility that synchronizes items from your Sitecor
 
 **Why?**  In Sitecore JSS you can choose between two developer workflow states. I think `Sitecore First` is the one to go with, you cannot start without the `Code First` approach. 
 
-[downloads]
-
+[![Build Status](https://dev.azure.com/MacawInteractive/umbrella-for-sitecore-jss/_apis/build/status/Build%20Master?branchName=master)](https://dev.azure.com/MacawInteractive/umbrella-for-sitecore-jss/_build/latest?definitionId=4&branchName=master)
+![downloads](https://img.shields.io/github/downloads/macaw-interactive/umbrella-for-sitecore-jss/total.svg)
+![issues](https://img.shields.io/github/issues/macaw-interactive/umbrella-for-sitecore-jss.svg)
+![issues](https://img.shields.io/github/watchers/macaw-interactive/umbrella-for-sitecore-jss.svg)
+![issues](https://img.shields.io/github/stars/macaw-interactive/umbrella-for-sitecore-jss.svg)
+![issues](https://img.shields.io/github/forks/macaw-interactive/umbrella-for-sitecore-jss.svg)
 ## Installation
 
 ```bash
@@ -65,4 +69,3 @@ git clone https://github.com/macaw-interactive/umbrella-for-sitecore-jss
 
 [license]: license
 [author]: https://gary.wenneker.org
-[downloads]: https://img.shields.io/github/downloads/macaw-interactive/umbrella-for-sitecore-jss/total.svg

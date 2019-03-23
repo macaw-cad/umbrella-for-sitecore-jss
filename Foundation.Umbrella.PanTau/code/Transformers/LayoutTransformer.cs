@@ -21,12 +21,7 @@ namespace Umbrella.PanTau.Transformers
 
         public override dynamic Transform(RenderedItem rendered)
         {
-            //rendered.Fields.RemoveAll(); // remove all fields
-            //rendered.Placeholders.Clear();
-            //rendered.Elements.Clear();
-            //rendered.Context.Clear();
-
-            rendered.Context.Add("placeholderManifest", GetPlaceholders());
+            rendered.Context.Add("placeholders", GetPlaceholders());
             rendered.Context.Add("templates", GetTemplates());
             rendered.Context.Add("renderings", GetRenderings());
             return base.Transform(rendered);

@@ -104,7 +104,7 @@
     <PackageReference Include="Sitecore.Zip" Version="9.1.0" />
 
     <PackageReference Include="Microsoft.AspNet.Cors" Version="5.2.6" />
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.6" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" />
     <PackageReference Include="Microsoft.AspNet.OData" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.6" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.6" />

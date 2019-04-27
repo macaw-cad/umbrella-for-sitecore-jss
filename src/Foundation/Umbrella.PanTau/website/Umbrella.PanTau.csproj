@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <RootNamespace>Umbrella.PanTau</RootNamespace>
+    <AssemblyName>Umbrella.PanTau</AssemblyName>
+    <Version>9.1.0</Version>
+    <Authors>Gary Wenneker</Authors>
+    <Company>Macaw</Company>
+    <Copyright>Gary Wenneker</Copyright>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/macaw-interactive/umbrella-for-sitecore-jss/master/license</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/macaw-interactive/umbrella-for-sitecore-jss</PackageProjectUrl>
+    <PackageTags>Sitecore JSS Umbrella</PackageTags>
+    <Description>Umbrella for Sitecore JSS is a utility that synchronizes items from your Sitecore JSS to your local JSS development environment</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Unicorn" Version="4.0.8" />
+    <PackageReference Include="Sitecore.JavaScriptServices.Configuration" Version="[12.0.0]" />
+    <PackageReference Include="Sitecore.JavaScriptServices.Core" Version="[12.0.0]" />
+    <PackageReference Include="Sitecore.JavaScriptServices.Globalization" Version="[12.0.0]" />
+    <PackageReference Include="Sitecore.JavaScriptServices.ViewEngine" Version="[12.0.0]" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(NuGetPackageRoot)\Unicorn\4.0.8\content\**\*">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

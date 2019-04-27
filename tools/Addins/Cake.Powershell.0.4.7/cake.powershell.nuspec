@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Cake.Powershell</id>
+    <version>0.4.7</version>
+    <title>Cake.Powershell</title>
+    <authors>Phillip Sharpe</authors>
+    <owners>Phillip Sharpe</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/SharpeRAD/Cake.Powershell/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SharpeRAD/Cake.Powershell</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
+    <description>Cake Build addon for Powershell.</description>
+    <summary>Powershell addon for cake build.</summary>
+    <releaseNotes>Initial Release[Feature] Partial Linux support</releaseNotes>
+    <copyright>Copyright (c) 2015 - 2018 Phillip Sharpe</copyright>
+    <tags>Cake Script Build Powershell</tags>
+    <dependencies>
+      <dependency id="Cake.Core" version="0.29.0" />
+    </dependencies>
+  </metadata>
+</package>

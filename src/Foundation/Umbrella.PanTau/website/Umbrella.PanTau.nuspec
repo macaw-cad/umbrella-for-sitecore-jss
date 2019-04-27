@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/macaw-interactive/umbrella-for-sitecore-jss</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Umbrella for Sitecore JSS is a utility that synchronizes items from your Sitecore JSS to your local JSS development environment</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <releaseNotes>Version for Sitecore 9.1.1 and JSS 12.0.1.</releaseNotes>
     <copyright>Copyright 2019</copyright>
     <tags>Sitecore JSS Umbrella</tags>
   </metadata>

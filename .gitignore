@@ -245,3 +245,5 @@ npm-debug.log
 .DS_Store
 
 /BuildConfiguration.csproj
+
+src/Foundation/Umbrella\.PanTau/website/\.vs/

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Cake.XdtTransform</id>
+    <version>0.16.0</version>
+    <title>Cake.XdtTransform</title>
+    <authors>Jamie Phillips</authors>
+    <owners>Jamie Phillips</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/cake-contrib/Cake.XdtTransform</licenseUrl>
+    <projectUrl>https://github.com/cake-contrib/Cake.XdtTransform</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/cake-contrib/graphics/a5cf0f881c390650144b2243ae551d5b9f836196/png/cake-contrib-medium.png</iconUrl>
+    <description>Helper to perform XDT based config file transforms.</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright (c) Jamie Phillips 2015 - Present</copyright>
+    <tags>Cake Transform Config XDT</tags>
+  </metadata>
+</package>

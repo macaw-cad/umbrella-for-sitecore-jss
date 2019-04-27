@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Cake.Json</id>
+    <version>3.0.1</version>
+    <title>Cake.Json</title>
+    <authors>Redth</authors>
+    <owners>Redth</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.githubusercontent.com/redth/Cake.Json/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/redth/Cake.Json</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/redth/Cake.Json/master/icon.png</iconUrl>
+    <description>Cake Build addon for JSON Serialization and manipulation.</description>
+    <tags>Cake Script Build</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6">
+        <dependency id="Cake.Common" version="0.26.0" exclude="Build,Analyzers" />
+        <dependency id="Cake.Core" version="0.26.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Cake.Common" version="0.26.0" exclude="Build,Analyzers" />
+        <dependency id="Cake.Core" version="0.26.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <RootNamespace>Umbrella.PanTau</RootNamespace>
+    <AssemblyName>Umbrella.PanTau</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Unicorn" Version="4.0.8" />
+    <PackageReference Include="Sitecore.JavaScriptServices.Configuration" Version="[12.0.0]"/>
+    <PackageReference Include="Sitecore.JavaScriptServices.Core" Version="[12.0.0]"/>
+    <PackageReference Include="Sitecore.JavaScriptServices.Globalization" Version="[12.0.0]"/>
+    <PackageReference Include="Sitecore.JavaScriptServices.ViewEngine" Version="[12.0.0]"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(NuGetPackageRoot)\Unicorn\4.0.8\content\**\*">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

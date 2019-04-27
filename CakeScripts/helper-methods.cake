@@ -11,7 +11,7 @@ public class Configuration
     public string WebsiteRoot {get;set;}
     public string XConnectRoot {get;set;}
     public string XConnectIndexerRoot {get;set;}
-	public string XConnectAutomationServiceRoot {get;set;}
+	  public string XConnectAutomationServiceRoot {get;set;}
     public string InstanceUrl {get;set;}
     public string SolutionName {get;set;}
     public string ProjectFolder {get;set;}
@@ -19,7 +19,9 @@ public class Configuration
     public string MessageStatisticsApiKey {get;set;}
     public string MarketingDefinitionsApiKey {get;set;}
     public bool RunCleanBuilds {get;set;}
-	public int DeployExmTimeout {get;set;}
+	  public int DeployExmTimeout {get;set;}
+    public string NuGetVersion {get;set;}
+    public string NuGetAuthors {get;set;}
     public string BuildToolVersions 
     {
         set 

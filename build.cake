@@ -152,4 +152,32 @@ Task("Apply-Xml-Transform").Does(() => {
 	Transform($"{configuration.ProjectSrcFolder}\\Fitness.Automation\\App_Data\\Config\\sitecore\\MarketingAutomation", $"{configuration.XConnectAutomationServiceRoot}\\App_Data\\Config\\sitecore\\MarketingAutomation");
 });
 
+Task("Build-NuGet-Packages")
+  //.IsDependentOn("Restore-NuGet-Packages")
+  //.IsDependentOn("Build")
+    .Does(() =>
+  {
+    var nuGetPackSettings = new NuGetPackSettings
+	  {
+		  OutputDirectory = $"{configuration.ProjectSrcFolder}\\NuGetPackages",
+		  IncludeReferencedProjects = true,
+		  Properties = new Dictionary<string, string>
+		  {
+			  { "Configuration", "Release" },
+        { "version", configuration.NuGetVersion },
+		  }
+	  };
+
+    NuGetPack($"{configuration.ProjectFolder}\\src\\Foundation\\Umbrella.Pantau\\website\\Umbrella.Pantau.nuspec", nuGetPackSettings);
+
+    // Get the path to the package.
+    //var package = "";
+
+ // Push the package.
+ //NuGetPush(package, new NuGetPushSettings {
+ //    Source = "",
+ //    ApiKey = "AzureDevOps"
+ //});
+});
+
 RunTarget(target);

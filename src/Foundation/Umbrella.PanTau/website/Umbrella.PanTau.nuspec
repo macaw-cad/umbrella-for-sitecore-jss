@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Umbrella.PanTau</id>
+    <version>$version$</version>
+    <title>Umbrella.PanTau</title>
+    <authors>Gary Wenneker</authors>
+    <owners>Gary Wenneker</owners>
+    <licenseUrl>https://raw.githubusercontent.com/macaw-interactive/umbrella-for-sitecore-jss/master/license</licenseUrl>
+    <projectUrl>https://github.com/macaw-interactive/umbrella-for-sitecore-jss</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Umbrella for Sitecore JSS is a utility that synchronizes items from your Sitecore JSS to your local JSS development environment</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>Sitecore JSS Umbrella</tags>
+  </metadata>
+</package>

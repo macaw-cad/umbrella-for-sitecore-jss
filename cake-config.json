@@ -8,5 +8,7 @@
   "ProjectFolder": "D:\\projects\\_JSS\\Umbrella",
   "BuildConfiguration": "Debug",
   "BuildToolVersions": "VS2017",
-  "RunCleanBuilds": true
+  "RunCleanBuilds": true,
+  "NuGetVersion": "9.1.1",
+  "NuGetAuthors": "Gary Wenneker"
 }

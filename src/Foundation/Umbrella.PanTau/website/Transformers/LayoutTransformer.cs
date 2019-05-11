@@ -29,10 +29,11 @@ namespace Umbrella.PanTau.Transformers
 
         private JArray GetTemplates()
         {
+            var templates = new JArray();
             var siteName = Sitecore.Context.Site.Name;
             var templatePath = $"/sitecore/templates/Project/{siteName}";
             var templateFolderItem = Sitecore.Context.Database.GetItem(templatePath);
-            var templates = new JArray();
+            if (templateFolderItem == null) return templates;
 
             foreach (Item item in templateFolderItem.Children)
             {
@@ -68,10 +69,11 @@ namespace Umbrella.PanTau.Transformers
 
         private JArray GetRenderings()
         {
+            var renderings = new JArray();
             var siteName = Sitecore.Context.Site.Name;
             var renderingPath = $"/sitecore/layout/Renderings/Project/{siteName}";
             var renderingFolderItem = Sitecore.Context.Database.GetItem(renderingPath);
-            var renderings = new JArray();
+            if (renderingFolderItem == null) return renderings;
 
             foreach (Item item in renderingFolderItem.Children)
             {
@@ -126,10 +128,11 @@ namespace Umbrella.PanTau.Transformers
 
         private JArray GetPlaceholders()
         {
+            var placeholders = new JArray();
             var siteName = Sitecore.Context.Site.Name;
             var placeholderPath = $"/sitecore/layout/Placeholder Settings/Project/{siteName}";
             var placeholderFolderItem = Sitecore.Context.Database.GetItem(placeholderPath);
-            var placeholders = new JArray();
+            if (placeholderFolderItem == null) return placeholders;
 
             foreach (Item item in placeholderFolderItem.Children)
             {

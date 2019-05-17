@@ -165,7 +165,11 @@ Task("Build-NuGet-Packages")
 		  {
 			  { "Configuration", "Release" },
         { "version", configuration.NuGetVersion },
-		  }
+		  },
+      Files = new [] {
+          new NuSpecContent {Source = "bin/Umbrella.PanTau.dll", Target = "lib/net472/"},
+          new NuSpecContent {Source = "App_Config/**/*", Target = "."},
+        }
 	  };
 
     NuGetPack($"{configuration.ProjectFolder}\\src\\Foundation\\Umbrella.Pantau\\website\\Umbrella.Pantau.nuspec", nuGetPackSettings);

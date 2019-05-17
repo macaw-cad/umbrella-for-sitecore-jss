@@ -1,4 +1,4 @@
-# Umbrella for Sitecore JSS
+# Umbrella for Sitecore 9.1.1 JSS (12.0.1)
 
 
             __.|.__ 
@@ -20,11 +20,12 @@ Umbrella for Sitecore JSS is a utility that synchronizes items from your Sitecor
 
 **Why?**  In Sitecore JSS you can choose between two developer workflow states. I think `Sitecore First` is the one to go with, you cannot start without the `Code First` approach. 
 
-The Sitecore package for this project: [Umbrella for Sitecore JSS-1.0.0.0](./dist/Umbrella%20for%20Sitecore%20JSS-1.0.0.0.zip)
+The package is available on NuGet: [NuGetPackage]
 
 ![Umbrella](https://img.shields.io/badge/Umbrella-%20Sitecore%20JSS-red.svg)
 [![Build Status MASTER](https://dev.azure.com/MacawInteractive/umbrella-for-sitecore-jss/_apis/build/status/Build%20Master?branchName=master)](https://dev.azure.com/MacawInteractive/umbrella-for-sitecore-jss/_build/latest?definitionId=4&branchName=master)
 ![downloads](https://img.shields.io/github/downloads/macaw-interactive/umbrella-for-sitecore-jss/total.svg)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Umbrella.PanTau.svg?label=NuGet%20downloads)
 ![issues](https://img.shields.io/github/issues/macaw-interactive/umbrella-for-sitecore-jss.svg)
 ![issues](https://img.shields.io/github/watchers/macaw-interactive/umbrella-for-sitecore-jss.svg)
 ![issues](https://img.shields.io/github/stars/macaw-interactive/umbrella-for-sitecore-jss.svg)
@@ -181,9 +182,15 @@ node .\scripts\umbrella.js sync
 
 > Documentation and sources may change
 
+You can either work with the sources of this repository or you can add it as a [NuGet][NuGetPackage] package to your solution.
+Make sure to choose the right version of the package!
+
+if you want to use the sources:
+
 ```bash
 git clone https://github.com/macaw-interactive/umbrella-for-sitecore-jss
 ```
+
 
 ## API
 
@@ -212,4 +219,5 @@ This will export the content of your routes (pages) to your local JSS developmen
 [license]: license
 [author]: https://gary.wenneker.org
 [react-jss-typescript-starter]: https://github.com/macaw-interactive/react-jss-typescript-starter
-[umbrellascript]: https://github.com/macaw-interactive/react-jss-typescript-starter/blob/develop/scripts/umbrella.js
+[umbrellascript]: https://github.com/macaw-interactive/react-jss-typescript-starter/tree/develop/samples/react-typescript/scripts
+[NuGetPackage]: https://www.nuget.org/packages/Umbrella.PanTau/

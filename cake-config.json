@@ -9,6 +9,6 @@
   "BuildConfiguration": "Debug",
   "BuildToolVersions": "VS2017",
   "RunCleanBuilds": true,
-  "NuGetVersion": "9.1.1",
+  "NuGetVersion": "9.1.1.2",
   "NuGetAuthors": "Gary Wenneker"
 }

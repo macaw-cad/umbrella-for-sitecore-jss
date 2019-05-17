@@ -28,7 +28,10 @@ namespace Umbrella.PanTau.Serialization.FieldSerializers
             var imageField = (ImageField) field;
 
             MediaItem mediaItem = imageField.MediaItem;
-            var stream = mediaItem.GetMediaStream();
+
+            var stream = mediaItem?.GetMediaStream();
+            if (stream == null) return;
+
             var bytes = new byte[stream.Length];
             stream.Read(bytes, 0, bytes.Length);
             var base64 = $"data:{mediaItem.MimeType};base64,{Convert.ToBase64String(bytes)}";
